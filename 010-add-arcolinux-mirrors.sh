@@ -39,4 +39,7 @@ Include = /etc/pacman.d/arcolinux-mirrorlist' | sudo tee --append /etc/pacman.co
 
 fi
 
-echo "DONE - UPDATE NOW"
+
+###############################################################################
+echo "Update and reboot to get those mirrrors working"
+###############################################################################
