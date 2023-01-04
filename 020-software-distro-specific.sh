@@ -42,41 +42,94 @@ func_install() {
     fi
 }
 
-###############################################################################
-echo "Installation of the core software"
+func_category() {
+	tput setaf 5;
+	echo "################################################################"
+	echo "Installing software for category " $1
+	echo "################################################################"
+	echo;tput sgr0
+}
+
 ###############################################################################
 
+func_category Additional-distro-specific
+
 list=(
-sddm
+
+accountsservice
+arandr
+arcolinux-config-i3wm-git
+arcolinux-i3wm-git
+arcolinux-i3wm-dconf-git
+arcolinux-local-applications-git
+arcolinux-local-applications-all-hide-git
+arcolinux-local-xfce4-git
+archlinux-logout-git
+arcolinux-sddm-simplicity-git
 arcolinux-wallpapers-git
+arcolinux-xfce-git
+autotiling 
+dmenu
+feh
+gmrun
+gtk-engine-murrine
+i3-wm
+i3blocks
+i3lock
+i3lock-color
+i3status
+imagemagick
+inxi
+lxappearance
+lxrandr
+mesa
+nitrogen
+picom
+playerctl
+polybar
+python-i3ipc 
+python-pywal
+rxvt-unicode
+rxvt-unicode-terminfo
+sddm
 thunar
 thunar-archive-plugin
 thunar-volman
+urxvt-fullscreen
+urxvt-perls
+urxvt-resize-font-git
+volumeicon
+w3m
+urxvt-resize-font-git
+xfce4-appfinder
+xfce4-notifyd
+xfce4-power-manager
+xfce4-screenshooter
+xfce4-settings
+xfce4-screenshooter
+xfce4-taskmanager
 xfce4-terminal
-arcolinux-xfce-git
-arcolinux-local-xfce4-git
-i3-wm
-i3status
-autotiling
-dmenu
-feh
-arcolinux-i3wm-git
-arcolinux-config-all-desktops-git
-arcolinux-dconf-all-desktops-git
-archlinux-logout-git
+hardcode-fixer-git
 )
 
 count=0
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
 	func_install $name
 done
+echo "Fixing hardcoded icon paths for applications - Wait for it"
+sudo hardcode-fixer
 
 ###############################################################################
 
+tput setaf 11;
+echo "################################################################"
+echo "Software has been installed"
+echo "################################################################"
+echo;tput sgr0
 
+###############################################################################
 
 tput setaf 5;echo "################################################################"
 echo "Enabling sddm as display manager"
