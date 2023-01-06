@@ -85,7 +85,7 @@ sddm
 urxvt-fullscreen
 urxvt-perls
 variety
-volumeicon
+# volumeicon
 w3m
 xfce4-appfinder
 xfce4-notifyd

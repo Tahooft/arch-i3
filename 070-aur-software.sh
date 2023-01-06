@@ -52,7 +52,6 @@ hardcode-fixer-git
 mintstick-git
 sublime-text-4
 telegram-desktop
-thermald
 the_platinum_searcher-bin
 urxvt-resize-font-git
 ventoy-bin

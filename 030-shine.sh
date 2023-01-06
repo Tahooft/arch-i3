@@ -55,7 +55,15 @@ func_category() {
 func_category Fonts
 
 list=(
-arcolinux-fonts-git
+adwaita-cursors
+default-cursors
+xcursor-themes
+)
+
+
+func_category Fonts
+
+list=(
 awesome-terminal-fonts
 adobe-source-sans-fonts
 cantarell-fonts
@@ -70,6 +78,25 @@ ttf-roboto
 ttf-ubuntu-font-family
 tamsyn-font
 )
+
+func_category Themes
+
+list=(
+adapta-gtk-theme
+arc-gtk-theme
+gnome-themes-extra
+gtk-theme-elementary
+)
+
+func_category Icons
+
+list=(
+adwaita-icon-theme
+oxygen-icons
+)
+
+
+ 	
 
 count=0
 for name in "${list[@]}" ; do

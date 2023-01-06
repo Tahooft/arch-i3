@@ -61,7 +61,6 @@ gnome-keyring
 gnome-logs
 gparted
 gpodder
-gufw
 hdparm
 hddtemp
 hplip
