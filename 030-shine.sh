@@ -52,18 +52,11 @@ func_category() {
 
 ###############################################################################
 
-func_category Fonts
-
 list=(
 adwaita-cursors
 default-cursors
 xcursor-themes
-)
 
-
-func_category Fonts
-
-list=(
 awesome-terminal-fonts
 adobe-source-sans-fonts
 cantarell-fonts
@@ -77,11 +70,7 @@ ttf-liberation
 ttf-roboto
 ttf-ubuntu-font-family
 tamsyn-font
-)
 
-func_category Themes
-
-list=(
 adapta-gtk-theme
 arc-gtk-theme
 gnome-themes-extra
