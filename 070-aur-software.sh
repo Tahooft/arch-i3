@@ -38,7 +38,7 @@ func_install() {
     	echo "###############################################################################"
     	echo
     	tput sgr0
-    	sudo yay -aS --noconfirm --needed $1 
+    	yay -aS --noconfirm --needed $1 
     fi
 }
 
@@ -51,7 +51,6 @@ list=(
 hardcode-fixer-git
 mintstick-git
 sublime-text-4
-telegram-desktop
 the_platinum_searcher-bin
 urxvt-resize-font-git
 ventoy-bin
