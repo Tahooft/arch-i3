@@ -5,17 +5,17 @@
 # personal moet gedaan voordat dit script in ~/bin staat, misschien eerst testen of dat gebeurd is?
 set -e
 
-echo "################################################################"
-echo "####             PERSONAL i3 STUF                            ###"
-echo "################################################################"
-# rm -R ~/.config/i3//*
-# cp -r ~/bin/i3/* ~/.config/i3/
-# chmod +x ~/.config/i3/start-conky-i3statusbar.sh
-# cp ~/bin/autostart/xfce4-clipman-plugin-autostart.desktop ~/.config/autostart/xfce4-clipman-plugin-autostart.desktop
+# echo "################################################################"
+# echo "####             PERSONAL i3 STUF                            ###"
+# echo "################################################################"
+# # rm -R ~/.config/i3//*
+# # cp -r ~/bin/i3/* ~/.config/i3/
+# # chmod +x ~/.config/i3/start-conky-i3statusbar.sh
+# # cp ~/bin/autostart/xfce4-clipman-plugin-autostart.desktop ~/.config/autostart/xfce4-clipman-plugin-autostart.desktop
 
-echo "################################################################"
-echo "###################    PERSONAL STUF DONE  #####################"
-echo "################################################################"
+# echo "################################################################"
+# echo "###################    PERSONAL STUF DONE  #####################"
+# echo "################################################################"
 
 
 echo "################################################################"
@@ -88,7 +88,6 @@ echo "####             WHAT TO DO NOW?                             ###"
 echo "################################################################"
 
 echo "Arch Linux Tweaktool:"
-echo "   - AUDIO -> Alsa & Pipewire - Pulseaudio exit"
 echo "   - SAMBA installeren"
 echo "Maybe..."
 echo "   - opennic-up dns updater/extra nameservers for security (aur)"

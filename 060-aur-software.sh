@@ -24,7 +24,7 @@
 
 
 func_install() {
-	if pacman -Qi $1 &> /dev/null; then
+	if yay -Qia $1 &> /dev/null; then
 		tput setaf 2
   		echo "###############################################################################"
   		echo "################## The package "$1" is already installed"
@@ -38,27 +38,30 @@ func_install() {
     	echo "###############################################################################"
     	echo
     	tput sgr0
-    	sudo pacman -S --noconfirm --needed $1
+    	sudo yay -aS --noconfirm --needed $1 
     fi
 }
 
-func_category() {
-	tput setaf 5;
-	echo "################################################################"
-	echo "Installing software for category " $1
-	echo "################################################################"
-	echo;tput sgr0
-}
-
+###############################################################################
+echo "Installation of the aur packages"
 ###############################################################################
 
-func_category Any_software_from_arcolinux_xlarge_repository
-
 list=(
-gitahead
+
+hardcode-fixer-git
+mintstick-git
+sublime-text-4
+telegram-desktop
+thermald
+the_platinum_searcher-bin
+urxvt-resize-font-git
+ventoy-bin
+visual-studio-code-bin
+
 )
 
 count=0
+
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;

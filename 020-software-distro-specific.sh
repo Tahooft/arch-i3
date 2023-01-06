@@ -58,21 +58,11 @@ list=(
 
 accountsservice
 arandr
-arcolinux-config-i3wm-git
-arcolinux-i3wm-git
-arcolinux-i3wm-dconf-git
-arcolinux-local-applications-git
-arcolinux-local-applications-all-hide-git
-arcolinux-local-xfce4-git
-archlinux-logout-git
-arcolinux-sddm-simplicity-git
-arcolinux-wallpapers-git
-arcolinux-xfce-git
 autotiling 
 dmenu
 feh
 gmrun
-gtk-engine-murrine
+#gtk-engine-murrine
 i3-wm
 i3blocks
 i3lock
@@ -83,7 +73,7 @@ inxi
 lxappearance
 lxrandr
 mesa
-nitrogen
+# nitrogen
 picom
 playerctl
 polybar
@@ -92,24 +82,18 @@ python-pywal
 rxvt-unicode
 rxvt-unicode-terminfo
 sddm
-thunar
-thunar-archive-plugin
-thunar-volman
 urxvt-fullscreen
 urxvt-perls
-urxvt-resize-font-git
+variety
 volumeicon
 w3m
-urxvt-resize-font-git
 xfce4-appfinder
 xfce4-notifyd
 xfce4-power-manager
-xfce4-screenshooter
-xfce4-settings
-xfce4-screenshooter
-xfce4-taskmanager
+# xfce4-settings
+# xfce4-taskmanager
 xfce4-terminal
-hardcode-fixer-git
+
 )
 
 count=0

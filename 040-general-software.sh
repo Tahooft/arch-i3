@@ -48,14 +48,12 @@ echo "Installation of the development packages"
 
 list=(
 
-	
 arch-audit
 bash-completion 
 bash-language-server 
+baobab
 catfish
 dconf-editor
-docker
-docker-compose
 firefox
 gimp
 gnome-disk-utility
@@ -68,6 +66,7 @@ hdparm
 hddtemp
 hplip
 htop
+hw-probe
 intel-ucode
 jq
 libreoffice-fresh 
@@ -76,13 +75,11 @@ lm_sensors
 logrotate
 man-db
 meld
-mintstick-git
-mkcert
-nitrogen
+# nitrogen
 numlockx
 lshw
 meld
-nm-connection-editor
+neofetch
 nomacs
 polkit
 polkit-gnome
@@ -96,17 +93,14 @@ scrot
 seahorse
 simple-scan
 stacer
-sublime-text-4
 telegram-desktop
-thermald
-the_platinum_searcher-bin
+thunar
+thunar-archive-plugin
+thunar-volman
 usb_modeswitch
 usbmuxd
 usbutils
-variety
-ventoy-bin
 vlc
-visual-studio-code-bin
 wireless-regdb
 wireless_tools
 wpa_supplicant
