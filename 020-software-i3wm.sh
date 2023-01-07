@@ -90,9 +90,7 @@ w3m
 xfce4-appfinder
 xfce4-notifyd
 xfce4-power-manager
-# xfce4-settings
-# xfce4-taskmanager
-xfce4-terminal
+xfce4-clipman-plugin
 
 )
 
