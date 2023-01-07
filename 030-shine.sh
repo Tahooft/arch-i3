@@ -75,11 +75,7 @@ adapta-gtk-theme
 arc-gtk-theme
 gnome-themes-extra
 gtk-theme-elementary
-)
 
-func_category Icons
-
-list=(
 adwaita-icon-theme
 oxygen-icons
 )
