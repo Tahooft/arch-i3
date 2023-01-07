@@ -53,6 +53,8 @@ func_category() {
 ###############################################################################
 
 list=(
+xorg-xrdb 
+
 adwaita-cursors
 default-cursors
 xcursor-themes
@@ -80,7 +82,6 @@ adwaita-icon-theme
 oxygen-icons
 )
 
-
  	
 
 count=0
@@ -95,5 +96,13 @@ done
 tput setaf 11;
 echo "################################################################"
 echo "Software has been installed"
+echo "################################################################"
+echo;tput sgr0
+
+xrdb ~/.Xresources
+
+tput setaf 11;
+echo "################################################################"
+echo "Urxvt terminal looks better now"
 echo "################################################################"
 echo;tput sgr0
