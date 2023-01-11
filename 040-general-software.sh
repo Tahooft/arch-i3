@@ -53,9 +53,19 @@ bash-completion
 bash-language-server 
 baobab
 catfish
+dark-reader 		# FireFox dark 
 dconf-editor
+#ffmpegthumbnailer
+file-roller
 firefox
+firefox-adblock-plus
 freeciv
+gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
 gimp
 git
 gnome-disk-utility
@@ -63,6 +73,7 @@ gnome-keyring
 gnome-logs
 gparted
 gpodder
+hblock
 hdparm
 hddtemp
 hplip
@@ -70,6 +81,7 @@ htop
 hw-probe
 intel-ucode
 jq
+libgsf     	 		# Needed to display raw thumbnails
 libreoffice-fresh 
 libusb-compat
 lm_sensors
@@ -94,10 +106,12 @@ rsync
 scrot
 seahorse
 simple-scan
+sshfs
 stacer
 telegram-desktop
 thunar
 thunar-archive-plugin
+thunar-media-tags-plugin
 thunar-volman
 tmux
 usb_modeswitch
