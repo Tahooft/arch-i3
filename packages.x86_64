@@ -227,7 +227,7 @@ networkmanager-vpnc
 openresolv
 
 ###file management
-gvfs
+sgvf
 gvfs-afc
 gvfs-gphoto2
 gvfs-mtp

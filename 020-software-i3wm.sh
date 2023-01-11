@@ -62,7 +62,16 @@ autotiling
 dmenu
 feh
 gmrun
-#gtk-engine-murrine
+
+# Checken..
+gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+#udiskie 
+
 i3-wm
 i3blocks
 i3lock
@@ -73,7 +82,8 @@ inxi
 lxappearance
 lxrandr
 mesa
-# nitrogen
+network-manager-applet
+nm-connection-editor
 picom
 playerctl
 polybar
@@ -82,10 +92,10 @@ python-pywal
 rxvt-unicode
 rxvt-unicode-terminfo
 sddm
+tumbler
 urxvt-fullscreen
 urxvt-perls
 variety
-# volumeicon
 w3m
 xfce4-appfinder
 xfce4-notifyd
@@ -112,6 +122,12 @@ echo "################################################################"
 echo;tput sgr0
 
 ###############################################################################
+
+## Set default terminal
+export TERM=rxvt-unicode
+
+
+
 
 tput setaf 5;echo "################################################################"
 echo "Enabling sddm as display manager"

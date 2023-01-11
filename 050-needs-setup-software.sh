@@ -5,6 +5,35 @@
 # personal moet gedaan voordat dit script in ~/bin staat, misschien eerst testen of dat gebeurd is?
 set -e
 
+
+echo "################################################################"
+echo "####             Enable Timesyncd                            ###"
+echo "################################################################"
+
+sudo timedatectl set-local-rtc 1
+sudo timedatectl set-timezone   Europe/Amsterdam
+sudo systemctl start systemd-timesyncd.service
+sudo systemctl enable systemd-timesyncd.service
+
+echo "################################################################"
+echo "####             Timesyncd enabled                           ###"
+echo "################################################################"
+
+
+echo "################################################################"
+echo "####             Enable Reflector                            ###"
+echo "################################################################"
+# edit the configuration file at /etc/xdg/reflector/reflector.conf and then enable the timer with:
+systemctl enable reflector.timer
+systemctl start reflector.timer
+# Check that status with systemctl list-timers. 
+# To update the mirrorlist immediately instead of waiting for the scheduled operation, run systemctl start reflector.service.
+echo "################################################################"
+echo "####             refelector enabled                          ###"
+echo "################################################################"
+
+
+
 echo "################################################################"
 echo "####             Enable THERMALD                             ###"
 echo "################################################################"

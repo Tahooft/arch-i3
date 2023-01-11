@@ -66,6 +66,7 @@ noto-fonts
 ttf-bitstream-vera
 ttf-dejavu
 ttf-droid
+ttf-font-awesome
 ttf-hack
 ttf-inconsolata
 ttf-liberation

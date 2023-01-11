@@ -22,6 +22,9 @@
 #
 ###############################################################################
 
+# https://wiki.archlinux.org/title/Thunar
+# Edit ~/.config/xfce4/helpers.rc to set: TerminalEmulator=urxvt 
+# Edit in Thunar "Configure custom actions" -> "Terminal open here" command:  exo-open --working-directory %f --launch TerminalEmulator
 
 func_install() {
 	if pacman -Qi $1 &> /dev/null; then
@@ -38,91 +41,48 @@ func_install() {
     	echo "###############################################################################"
     	echo
     	tput sgr0
-    	sudo pacman -S --noconfirm --needed $1 
+    	sudo pacman -S --noconfirm --needed $1
     fi
 }
 
+func_category() {
+	tput setaf 5;
+	echo "################################################################"
+	echo "Installing software for category " $1
+	echo "################################################################"
+	echo;tput sgr0
+}
+
 ###############################################################################
-echo "Installation of the development packages"
-###############################################################################
+
 
 list=(
 
-arch-audit
-bash-completion 
-bash-language-server 
-baobab
-catfish
-dconf-editor
-firefox
-freeciv
-gimp
-git
-gnome-disk-utility
-gnome-keyring
-gnome-logs
-gparted
-gpodder
-hdparm
-hddtemp
-hplip
-htop
-hw-probe
-intel-ucode
-jq
-libreoffice-fresh 
-libusb-compat
-lm_sensors
-logrotate
-man-db
-meld
-numlockx
-lshw
-man-db
-man-pages
-meld
-neofetch
-nomacs
-polkit
-polkit-gnome
-pragha
-qbittorrent
-qjournalctl
-qutebrowser
-ranger
-rsync
-scrot
-seahorse
-simple-scan
-stacer
-telegram-desktop
-thunar
-thunar-archive-plugin
-thunar-volman
-tmux
-usb_modeswitch
-usbmuxd
-usbutils
-vim
-vlc
-wireless-regdb
-wireless_tools
-wpa_supplicant
-youtube-dl
+file-roller
+
+libgsf      # Needed to display raw thumbnails
+
+gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+
+sshfs 
+
+thunar-media-tags-plugin
+ffmpegthumbnailer 
+
+hblock	# blacklist adding to host
+firefox-adblock-plus
+dark-reader
+
 )
 
 count=0
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
 	func_install $name
 done
-
-###############################################################################
-
-tput setaf 11;
-echo "################################################################"
-echo "Software has been installed"
-echo "################################################################"
-echo;tput sgr0
