@@ -126,9 +126,6 @@ echo;tput sgr0
 ## Set default terminal
 export TERM=rxvt-unicode
 
-
-
-
 tput setaf 5;echo "################################################################"
 echo "Enabling sddm as display manager"
 echo "################################################################"

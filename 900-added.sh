@@ -58,25 +58,7 @@ func_category() {
 
 list=(
 
-file-roller
 
-libgsf      # Needed to display raw thumbnails
-
-gvfs
-gvfs-afc
-gvfs-gphoto2
-gvfs-mtp
-gvfs-nfs
-gvfs-smb
-
-sshfs 
-
-thunar-media-tags-plugin
-ffmpegthumbnailer 
-
-hblock	# blacklist adding to host
-firefox-adblock-plus
-dark-reader
 
 )
 
