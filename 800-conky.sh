@@ -57,6 +57,7 @@ func_category() {
 func_category Conky
 
 list=(
+conky-lua
 conky-manager
 yad
 )

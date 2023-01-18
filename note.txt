@@ -15,3 +15,36 @@
     Install a backup kernel like LTS or Zen kernel
 
     Install noto-fonts for basic font coverage
+
+
+ sudo pacman -Ss reflector
+  423  sudo pacman -S reflector
+  424  systemctl status reflector
+  425  systemctl enable reflector.timer
+  426  systemctl start reflector.timer
+  427  systemctl start reflector.service.
+
+
+
+  3  pacman -Ss samba
+  404  pacman -Ss smb
+  405  pacman -Ss avahi
+  406  systemctl status avahi
+  407  systemctl status avahi-daemon
+  408  systemctl start avahi-daemon
+  409  systemctl start smb
+  410  systemctl start nmb
+  411  systemctl status smb
+  412  systemctl status nmb
+  413  ls /etc | grep smb
+  414  ls /etc 
+  415  ls /etc | grep samba
+  416  ls /etc/samba | grep smb
+  417  ls
+  418  sudo cp smb.conf.txt /etc/samba/smb.conf
+
+
+    pacman -Ss ffmpegthumbnailer 
+  375  pacman -S ffmpegthumbnailer 
+
+  

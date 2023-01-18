@@ -53,7 +53,6 @@ bash-completion
 bash-language-server 
 baobab
 catfish
-cron
 dark-reader 		# FireFox dark 
 dconf-editor
 ffmpegthumbnailer

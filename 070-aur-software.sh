@@ -48,6 +48,8 @@ echo "Installation of the aur packages"
 
 list=(
 
+ant-dracula-kvantum-theme-git 
+autotiling
 hardcode-fixer-git
 mintstick-git
 sublime-text-4
