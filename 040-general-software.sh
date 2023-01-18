@@ -53,9 +53,10 @@ bash-completion
 bash-language-server 
 baobab
 catfish
+cron
 dark-reader 		# FireFox dark 
 dconf-editor
-#ffmpegthumbnailer
+ffmpegthumbnailer
 file-roller
 firefox
 firefox-adblock-plus
@@ -115,6 +116,7 @@ thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
 tmux
+udisks2
 usb_modeswitch
 usbmuxd
 usbutils
@@ -123,6 +125,7 @@ vlc
 wireless-regdb
 wireless_tools
 wpa_supplicant
+xclip
 youtube-dl
 )
 

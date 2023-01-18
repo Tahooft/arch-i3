@@ -28,16 +28,15 @@ systemctl enable reflector.timer
 systemctl start reflector.timer
 # Check that status with systemctl list-timers. 
 # To update the mirrorlist immediately instead of waiting for the scheduled operation, run systemctl start reflector.service.
+
 echo "################################################################"
 echo "####             refelector enabled                          ###"
 echo "################################################################"
 
 
-
 echo "################################################################"
 echo "####             Enable THERMALD                             ###"
 echo "################################################################"
-
 sudo pacman -S thermald --noconfirm --needed
 sudo systemctl enable thermald
 sudo systemctl start thermald
@@ -50,7 +49,6 @@ echo "################################################################"
 echo "################################################################"
 echo "####             Enable GUFW simple firewall                 ###"
 echo "################################################################"
-
 sudo pacman -S ufw gufw ufw-extras --noconfirm --needed
 sudo ufw enable
 systemctl enable ufw
@@ -85,11 +83,21 @@ echo "################################################################"
 
 
 echo "################################################################"
-echo "####             SETUP DOCKER                                ###"
+echo "####             CRON                                        ###"
+echo "################################################################"
+sudo pacman -S cron --noconfirm --needed
+sudo  systemctl start cronie
+sudo systemctl enable cronie
+
+echo "################################################################"
+echo "###################    CRON DONE            ####################"
 echo "################################################################"
 
-sudo pacman -S docker docker-compose --noconfirm --needed
 
+echo "################################################################"
+echo "####             SETUP DOCKER                                ###"
+echo "################################################################"
+sudo pacman -S docker docker-compose --noconfirm --needed
 sudo usermod -aG docker $USER
 systemctl enable docker
 systemctl start docker
@@ -102,7 +110,6 @@ echo "################################################################"
 echo "################################################################"
 echo "####             WHAT TO DO NOW?                             ###"
 echo "################################################################"
-
 echo "Arch Linux Tweaktool:"
 echo "   - SAMBA installeren"
 echo "Maybe..."
