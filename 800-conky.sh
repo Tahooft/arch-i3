@@ -52,14 +52,13 @@ func_category() {
 
 ###############################################################################
 
+# conky-lua via yay
+
 func_category Conky
 
 list=(
-conky-lua-archers
-arcolinux-conky-collection-git
-arcolinux-pipemenus-git
+conky-manager
 yad
-libpulse
 )
 
 count=0
@@ -69,12 +68,6 @@ for name in "${list[@]}" ; do
 	func_install $name
 done
 
-tput setaf 6;echo "################################################################"
-echo "Copying all files and folders from /etc/skel to ~"
-echo "################################################################"
-echo;tput sgr0
-cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
-cp -arf /etc/skel/. ~
 tput setaf 11;
 echo "################################################################"
 echo "Software has been installed"

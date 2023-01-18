@@ -10,10 +10,10 @@ echo "################################################################"
 echo "####             Enable Timesyncd                            ###"
 echo "################################################################"
 
-sudo timedatectl set-local-rtc 1
-sudo timedatectl set-timezone Europe/Amsterdam
-sudo systemctl start systemd-timesyncd.service
-sudo systemctl enable systemd-timesyncd.service
+# sudo timedatectl set-local-rtc 1
+# sudo timedatectl set-timezone Europe/Amsterdam
+# sudo systemctl start systemd-timesyncd.service
+# sudo systemctl enable systemd-timesyncd.service
 
 echo "################################################################"
 echo "####             Timesyncd enabled                           ###"

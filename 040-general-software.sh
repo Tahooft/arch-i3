@@ -87,11 +87,12 @@ libusb-compat
 lm_sensors
 logrotate
 man-db
+man-pages
 meld
+most   				# Needed for man
 numlockx
 lshw
 man-db
-man-pages
 meld
 neofetch
 nomacs
@@ -132,6 +133,8 @@ for name in "${list[@]}" ; do
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
 	func_install $name
 done
+
+export MANPAGER=less
 
 ###############################################################################
 
