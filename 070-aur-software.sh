@@ -50,6 +50,7 @@ list=(
 
 ant-dracula-kvantum-theme-git 
 autotiling
+backintime
 hardcode-fixer-git
 mintstick-git
 sublime-text-4
