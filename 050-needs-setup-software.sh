@@ -23,7 +23,10 @@ echo "################################################################"
 echo "################################################################"
 echo "####             Enable Reflector                            ###"
 echo "################################################################"
-# edit the configuration file at /etc/xdg/reflector/reflector.conf and then enable the timer with:
+sudo pacman -S reflector
+
+#NB!# edit the configuration file at /etc/xdg/reflector/reflector.conf and then enable the timer with:
+
 systemctl enable reflector.timer
 systemctl start reflector.timer
 # Check that status with systemctl list-timers. 

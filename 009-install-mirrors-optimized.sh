@@ -1,6 +1,28 @@
 #!/bin/bash
 set -e
 
+
+echo "################################################################"
+echo "####             Enable Reflector                            ###"
+echo "################################################################"
+sudo pacman -S reflector
+
+#NB!# edit the configuration file at /etc/xdg/reflector/reflector.conf and then enable the timer with:
+
+systemctl enable reflector.timer
+systemctl start reflector.timer
+# Check that status with systemctl list-timers. 
+# To update the mirrorlist immediately instead of waiting for the scheduled operation, run systemctl start reflector.service.
+
+echo "################################################################"
+echo "####             refelector enabled                          ###"
+echo "################################################################"
+
+
+
+
+
+
 echo "################################################################"
 echo "####             Installing reflector                        ###"
 echo "################################################################"
