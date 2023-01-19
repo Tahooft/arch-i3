@@ -96,6 +96,7 @@ man-db
 meld
 neofetch
 nomacs
+pkgstats
 polkit
 polkit-gnome
 pragha
