@@ -9,6 +9,7 @@ set -e
 echo "################################################################"
 echo "####             Enable Timesyncd                            ###"
 echo "################################################################"
+# Setup now done during archinstall
 
 # sudo timedatectl set-local-rtc 1
 # sudo timedatectl set-timezone Europe/Amsterdam

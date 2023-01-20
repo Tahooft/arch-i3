@@ -86,14 +86,11 @@ libreoffice-fresh
 libusb-compat
 lm_sensors
 logrotate
-man-db
-man-pages
-meld
-most   				# Needed for man
-numlockx
 lshw
 man-db
 meld
+most   				# Needed for man
+numlockx
 neofetch
 nomacs
 pkgstats

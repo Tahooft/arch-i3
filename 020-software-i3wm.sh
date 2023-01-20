@@ -62,16 +62,6 @@ autotiling
 dmenu
 feh
 gmrun
-
-# Checken..
-gvfs
-gvfs-afc
-gvfs-gphoto2
-gvfs-mtp
-gvfs-nfs
-gvfs-smb
-#udiskie 
-
 i3-wm
 i3blocks
 i3lock

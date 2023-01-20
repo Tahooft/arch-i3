@@ -17,15 +17,6 @@
     Install noto-fonts for basic font coverage
 
 
- sudo pacman -Ss reflector
-  423  sudo pacman -S reflector
-  424  systemctl status reflector
-  425  systemctl enable reflector.timer
-  426  systemctl start reflector.timer
-  427  systemctl start reflector.service.
-
-
-
   3  pacman -Ss samba
   404  pacman -Ss smb
   405  pacman -Ss avahi
