@@ -72,6 +72,7 @@ inxi
 lxappearance
 lxrandr
 mesa
+mesa-utils
 network-manager-applet
 nm-connection-editor
 picom
