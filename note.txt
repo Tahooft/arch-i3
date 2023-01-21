@@ -1,21 +1,8 @@
     Enable paccache.timer to clear the package cache weekly
-
     if using an SSD, enable fstrim.timer to discard unused blocks periodically
-
-    Setup a firewall such as ufw or firewalld
-
     Install and configure reflector to frequently update the mirrorlist automatically
-
-    Enable Parallel Downloads in /etc/pacman.conf
-
-    Install intel-ucode or amd-ucode microcode depending on your CPU
-
     For laptops, setup CPU frequency scaling and optimise battery life with tlp, autocpu-freq, powertop or power-profiles-daemon etc
-
     Install a backup kernel like LTS or Zen kernel
-
-    Install noto-fonts for basic font coverage
-
 
   3  pacman -Ss samba
   404  pacman -Ss smb
@@ -38,4 +25,18 @@
     pacman -Ss ffmpegthumbnailer 
   375  pacman -S ffmpegthumbnailer 
 
-  
+lynis   # audit system
+rkhunter
+logwatch 
+
+USBGuard # on laptop
+
+
+Arch Linux Tweaktool:
+   - SAMBA installeren
+Maybe...
+   - opennic-up dns updater/extra nameservers for security (aur)
+   - shortwave
+   - megasync (aur)
+Have a look at...
+   - AppArmor

@@ -87,9 +87,7 @@ libusb-compat
 lm_sensors
 logrotate
 lshw
-man-db
 meld
-most   				# Needed for man
 numlockx
 neofetch
 nomacs

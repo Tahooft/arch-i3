@@ -150,6 +150,7 @@ xfce4-appfinder
 xfce4-clipman-plugin				
 xfce4-notifyd				
 xfce4-power-manager				
+xorg-xinput
 xorg-xrdb 				
 yay (aur)				
 youtube-dl

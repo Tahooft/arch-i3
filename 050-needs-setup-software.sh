@@ -92,6 +92,10 @@ systemctl start docker
 echo "################################################################"
 echo "###################    DOCKER SETUP DONE    ####################"
 echo "################################################################"
+sudo pacman -S man-pages --noconfirm --needed
+sudo pacman -S man-db --noconfirm --needed
+sudo pacman -S most --noconfirm --needed
+sudo makewhatis /usr/share/man
 
 
 echo "################################################################"

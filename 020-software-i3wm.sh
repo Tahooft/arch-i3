@@ -91,6 +91,7 @@ xfce4-appfinder
 xfce4-notifyd
 xfce4-power-manager
 xfce4-clipman-plugin
+xorg-xinput
 
 )
 
