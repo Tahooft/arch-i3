@@ -50,8 +50,12 @@ list=(
 
 arch-audit
 bash-completion 
-bash-language-server 
+bash-language-server
+bat
 baobab
+blueberry
+bluez
+bluez-utils
 catfish
 dark-reader 		# FireFox dark 
 dconf-editor
@@ -73,6 +77,7 @@ gnome-keyring
 gnome-logs
 gparted
 gpodder
+gsmartcontrol
 hblock
 hdparm
 hddtemp
