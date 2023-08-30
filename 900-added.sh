@@ -57,8 +57,16 @@ func_category() {
 
 
 list=(
-
-
+	arandr
+	autorandr
+	conky 
+	conky-manager
+	reflector
+	dropbox  
+	thunar-dropbox
+	pasystray
+	rmlint-shredder
+  	volumeicon
 
 )
 
