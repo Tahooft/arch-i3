@@ -59,15 +59,23 @@ func_category() {
 list=(
 	arandr
 	autorandr
+	cbatticon
 	conky 
 	conky-manager
-	reflector
-	dropbox  
+	dropbox
+	kdeconnect
+	laptop-detect
 	thunar-dropbox
 	pasystray
+	pavucontrol-qt
+	reflector
 	rmlint-shredder
   	volumeicon
-
+	xfce4-screenshooter
+	xfce4-taskmanager
+	xfce4-settings-manager
+	xorg-xkill
+	xorg-xev
 )
 
 count=0
