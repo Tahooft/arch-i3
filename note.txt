@@ -1,0 +1,42 @@
+    Enable paccache.timer to clear the package cache weekly
+    if using an SSD, enable fstrim.timer to discard unused blocks periodically
+    Install and configure reflector to frequently update the mirrorlist automatically
+    For laptops, setup CPU frequency scaling and optimise battery life with tlp, autocpu-freq, powertop or power-profiles-daemon etc
+    Install a backup kernel like LTS or Zen kernel
+
+  3  pacman -Ss samba
+  404  pacman -Ss smb
+  405  pacman -Ss avahi
+  406  systemctl status avahi
+  407  systemctl status avahi-daemon
+  408  systemctl start avahi-daemon
+  409  systemctl start smb
+  410  systemctl start nmb
+  411  systemctl status smb
+  412  systemctl status nmb
+  413  ls /etc | grep smb
+  414  ls /etc 
+  415  ls /etc | grep samba
+  416  ls /etc/samba | grep smb
+  417  ls
+  418  sudo cp smb.conf.txt /etc/samba/smb.conf
+
+
+    pacman -Ss ffmpegthumbnailer 
+  375  pacman -S ffmpegthumbnailer 
+
+lynis   # audit system
+rkhunter
+logwatch 
+
+USBGuard # on laptop
+
+
+Arch Linux Tweaktool:
+   - SAMBA installeren
+Maybe...
+   - opennic-up dns updater/extra nameservers for security (aur)
+   - shortwave
+   - megasync (aur)
+Have a look at...
+   - AppArmor

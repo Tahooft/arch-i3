@@ -1,0 +1,156 @@
+accountsservice				
+adapta-gtk-theme				
+adobe-source-sans-fonts				
+adwaita-cursors				
+adwaita-icon-theme				
+ant-dracula-kvantum-theme-git (aur)				
+arandr				
+arc-gtk-theme				
+arch-audit				
+autotiling 				
+autotiling (aur)				
+awesome-terminal-fonts				
+backintime (aur)				
+baobab				
+bash-completion 				
+bash-language-server 				
+cantarell-fonts				
+catfish				
+cron				
+dark-reader 		# FireFox dark 		
+dconf-editor				
+default-cursors				
+dmenu				
+docker 				
+docker-compose 				
+feh				
+ffmpegthumbnailer				
+file-roller				
+firefox				
+firefox-adblock-plus				
+freeciv				
+gimp				
+git				
+gmrun				
+gnome-disk-utility				
+gnome-keyring				
+gnome-logs				
+gnome-themes-extra				
+gparted				
+gpodder				
+gtk-theme-elementary				
+gvfs							
+gvfs-afc				
+gvfs-gphoto2				
+gvfs-mtp				
+gvfs-nfs				
+gvfs-smb				
+hardcode-fixer-git (aur)				
+hblock				
+hddtemp				
+hdparm				
+hplip				
+htop				
+hw-probe				
+i3-wmN
+i3blocks				
+i3lock				
+i3lock-color				
+i3status				
+imagemagick				
+intel-ucode				
+inxi				
+jq				
+libgsf 	 		# Needed to display raw thumbnails	
+libreoffice-fresh 				
+libusb-compat				
+lm_sensors				
+logrotate				
+lshw				
+lxappearance				
+lxrandr				
+man-db						
+man-pages				
+meld				
+mesa				
+mintstick-git (aur)				
+mkcert				
+most 				# Needed for man
+neofetch				
+network-manager-applet				
+nm-connection-editor				
+nomacs				
+noto-fonts				
+numlockx				
+oxygen-icons				
+picom				
+pkgstats				
+playerctl				
+polkit				
+polkit-gnome				
+polybar				
+pragha				
+python-i3ipc 				
+python-pywal				
+qbittorrent				
+qjournalctl				
+qutebrowser				
+ranger				
+rsync				
+rxvt-unicode				
+rxvt-unicode-terminfo				
+scrot				
+sddm				
+seahorse				
+simple-scan				
+sshfs				
+stacer				
+sublime-text-4 (aur)				
+tamsyn-font				
+telegram-desktop				
+the_platinum_searcher-bin (aur)				
+thermald				
+thunar				
+thunar-archive-plugin				
+thunar-media-tags-plugin				
+thunar-volman				
+tmux				
+ttf-bitstream-vera				
+ttf-dejavu				
+ttf-droid				
+ttf-font-awesome				
+ttf-hack				
+ttf-inconsolata				
+ttf-liberation				
+ttf-roboto				
+ttf-ubuntu-font-family				
+tumbler				
+udisks2				
+ufw gufw				
+ufw-extras				
+urxvt-fullscreen				
+urxvt-perls				
+urxvt-resize-font-git (aur)				
+usb_modeswitch				
+usbmuxd				
+usbutils				
+variety				
+ventoy-bin (aur)				
+vim				
+visual-studio-code-bin (aur)				
+vlc				
+w3m				
+wireless_tools				
+wireless-regdb				
+wpa_supplicant				
+xclip				
+xcursor-themes				
+xdg-user-dirs				
+xfce4-appfinder				
+xfce4-clipman-plugin				
+xfce4-notifyd				
+xfce4-power-manager				
+xorg-xinput
+xorg-xrdb 				
+yay (aur)				
+youtube-dl
