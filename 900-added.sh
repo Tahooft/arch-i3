@@ -59,6 +59,9 @@ func_category() {
 list=(
 	arandr
 	autorandr
+	avidemux-qt
+	blueman
+	bluez
 	cbatticon
 	conky 
 	conky-manager
@@ -68,8 +71,10 @@ list=(
 	thunar-dropbox
 	pasystray
 	pavucontrol-qt
+	python-pip
 	reflector
 	rmlint-shredder
+	vidcutter
   	volumeicon
 	xfce4-screenshooter
 	xfce4-taskmanager

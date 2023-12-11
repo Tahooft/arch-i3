@@ -104,6 +104,20 @@ echo "###################    DOCKER SETUP DONE    ####################"
 echo "################################################################"
 
 
+
+echo "################################################################"
+echo "###################    BLUETOOTH SETUP      ####################"
+echo "################################################################"
+
+
+systemctl start bluetooth.service
+systemctl enable bluetooth.service
+
+echo "################################################################"
+echo "###################    BLUETOOTH SETUP DONE    #################"
+echo "################################################################"
+
+
 sudo pacman -S man-pages --noconfirm --needed
 sudo pacman -S man-db --noconfirm --needed
 sudo pacman -S most --noconfirm --needed

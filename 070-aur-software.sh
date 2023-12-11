@@ -51,6 +51,7 @@ list=(
 ant-dracula-kvantum-theme-git 
 autotiling
 backintime
+brave-bin
 ddev-bin
 hardcode-fixer-git
 mintstick-git
