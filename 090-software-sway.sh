@@ -32,14 +32,13 @@ func_category() {
 
 func_category Additional-distro-specific
 
+# i3-focus ???
 list=(
 
 sway 
 swaybg
 swaylock
 swayidle
-swaync
-i3-focus
 alacritty 
 waybar 
 wofi 
@@ -48,7 +47,6 @@ xorg-xlsclients
 fqt5-wayland 
 blueman
 nwg-look
-nwg-displays
 glfw-wayland 
 foot
 grim
