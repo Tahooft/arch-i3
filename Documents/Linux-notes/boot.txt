@@ -1,6 +1,0 @@
-# Plot a graph of the boot proces, can be viewed with FireFox
-systemd-analyze plot > systemd-analyze.post.svg
-
-# Save boot time by disabling waiting for network to come online
-#NB!# Might effect smb, nmb and docker services 
-sudo systemctl disable NetworkManager-wait-online.service

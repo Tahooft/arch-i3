@@ -1,2 +1,0 @@
-Voor de fullscreen launcher installeer de kdeplasma-addons 
-s

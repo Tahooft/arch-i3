@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -e
+set -e
 
 func_install() {
 	if pacman -Qi $1 &> /dev/null; then

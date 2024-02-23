@@ -1,8 +1,0 @@
-# On first run: 
-sudo rkhunter --propupd
-
-# To run a system check:
-sudo rkhunter --check --sk
-
-# To read log:
-sudo less /var/log/rkhunter.log

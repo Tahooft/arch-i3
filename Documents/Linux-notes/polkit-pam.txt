@@ -1,8 +1,0 @@
-https://wiki.archlinux.org/title/Polkit
-https://wiki.archlinux.org/title/PAM
-
-Tip: To display Policykit actions in a graphical interface, install the polkit-explorer-git AUR package.
-
-The command pkaction lists all the actions defined in /usr/share/polkit-1/actions for quick reference. 
-
-Authorization rules that overrule the default settings are laid out in a set of directories as described above. For all purposes relating to personal configuration of a single system, only /etc/polkit-1/rules.d should be used. 

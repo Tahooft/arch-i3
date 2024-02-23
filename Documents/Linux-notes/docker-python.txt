@@ -1,3 +1,0 @@
-# In visual studio code (de non-free versie helaas)  install Dev Containers 
-
-

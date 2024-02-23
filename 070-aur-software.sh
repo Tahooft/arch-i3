@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -e
+set -e
 
 func_install() {
 	if yay -Qia $1 &> /dev/null; then
