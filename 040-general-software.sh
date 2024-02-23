@@ -1,27 +1,5 @@
 #!/bin/bash
 #set -e
-###############################################################################
-# Author	:	Erik Dubois
-# Website	:	https://www.erikdubois.be
-# Website	:	https://www.arcolinux.info
-# Website	:	https://www.arcolinux.com
-# Website	:	https://www.arcolinuxd.com
-# Website	:	https://www.arcolinuxb.com
-# Website	:	https://www.arcolinuxiso.com
-# Website	:	https://www.arcolinuxforum.com
-###############################################################################
-#
-#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
-#
-###############################################################################
-
-
-###############################################################################
-#
-#   DECLARATION OF FUNCTIONS
-#
-###############################################################################
-
 
 func_install() {
 	if pacman -Qi $1 &> /dev/null; then
@@ -56,6 +34,7 @@ baobab
 blueberry
 bluez
 bluez-utils
+brightnessctl
 catfish
 dark-reader 		# FireFox dark 
 dconf-editor
@@ -64,6 +43,7 @@ file-roller
 firefox
 firefox-adblock-plus
 freeciv
+gimp-plugin-gmic
 gvfs
 gvfs-afc
 gvfs-gphoto2
@@ -96,10 +76,12 @@ meld
 numlockx
 neofetch
 nomacs
+pavucontrol
 pkgstats
 polkit
 polkit-gnome
 pragha
+python-pip
 qbittorrent
 qjournalctl
 qutebrowser
@@ -122,6 +104,7 @@ usbmuxd
 usbutils
 vim
 vlc
+waifu2x-ncnn-vulkan
 wireless-regdb
 wireless_tools
 wpa_supplicant
