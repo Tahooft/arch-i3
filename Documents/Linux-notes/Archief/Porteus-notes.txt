@@ -1,0 +1,59 @@
+misshien als 'su' nodig
+modules in: /mnt/sde1/porteus/modules
+
+usm -u all      # update
+usm -k          # search package
+    -i          # package info
+    -g          # package gett
+
+# examples (als su): one file
+usm -g  htop
+mv /tmp/usm/htop /mnt/sde1/porteus/modules
+tx2x2m  htop.tx2x2m -> htop.xzm   working module
+
+# examples (als su): bundle files
+# al downloaded in /tmp/usm/
+dir2xzm /tmp/usm/ new-bundle.xzm
+dir2xzm . new-bundle.xzm     if in /tmp/usm/
+activate new-bunddle.xzm    (gives message)
+mv to modules
+
+THINGS TO DO AFTER INSTALLATION:
+
+1) Find the fastest mirror
+Open a root console (root password is toor) and run: fastest-mirror
+- This will place the fastest mirror for your area into the file /etc/porteus.conf
+
+
+SLACKYD
+options 
+ -5: Skip md5 verify.                                
+ -b: Try to download package build sources.          
+ -B: Try to build package from sources.              
+ -c: Use alternate config file.                      
+ -d: Search missing shared libraries of installed packages.
+ -D: Search missing required packages (packager-indicated).
+ -e: Use regex.                                      
+ -f: Force update or packages download. Assume yes to all question.
+ -g: Download package.                               
+ -h: Show this help.                                 
+ -I: Skip packages status check.                     
+ -l: List all packages installed.                    
+ -L: List all non-slackware packages installed.      
+ -m: Case insensitive.                               
+ -n: Only notify broken dependencies.                
+ -O: List all orphan packages.                       
+ -p: Clean slackyd directory (only packages and sources).
+ -P: Clean slackyd directory (all).                  
+ -q: Quiet, disable some warnings.                   
+ -r: Search not official replaceable packages.       
+ -R: Show repositories statistics.                   
+ -s: Search package.                                 
+ -S: Skip dependencies check.                        
+ -u: Update packages list and md5 hash list.         
+ -U: Search new packages.                            
+ -v: Verbose mode.                                   
+ -V: Show slackyd info.                              
+ -w: View package info.                              
+ -x: Disable blacklist.                              
+ -X: Show packages available and blacklisted. 

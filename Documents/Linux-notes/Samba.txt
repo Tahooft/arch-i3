@@ -4,7 +4,7 @@ Kopieer de smb.conf uit de dot-files naar /etc/samba
 Vergeet niet:
 sudo systemctl start smb.service   (en enable)
 
-smb://ch3mnas/
+
 smb://ch3mnas/volume_1/
 smb://ch3mnas/volume_2/
 

@@ -1,0 +1,10 @@
+Installeren via https://docs.anaconda.com/anaconda/install/linux/
+
+starten met: 
+anaconda-navigator
+
+ Om een channel toe te voegen kan je de url van dat channel gebruiken zoals: https://conda.anaconda.org/conda-forge/
+ 
+ conda activate and conda deactivate 
+ 
+ 

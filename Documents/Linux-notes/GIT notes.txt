@@ -1,4 +1,47 @@
-﻿round## I want to be able to do the following:
+# nieuwe repo
+  git init
+    4  git add README.md
+    5  git commit -m "first commit"
+    6  git branch -M main
+    7  git remote add origin https://github.com/Tahooft/i3.git
+    8  git push -u origin main
+    9  git add .
+   10  git status
+
+# Connecting to existing repo
+git clone http://github.com/tah..........
+git pull origin master
+# evt push 
+
+If daves_branch exists on the remote repository, but not on your local branch, you can simply type:
+
+git switch daves_branch ***
+    *** Note that if daves_branch doesn't exist locally you'll need to git fetch first before using switch.
+
+Since you do not have the branch locally, this will automatically make switch look on the remote repo. It will then also automatically set up remote branch tracking.
+
+
+
+
+
+# Basic GIT commands
+git clone [url]: Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits.
+git status: Always a good idea, this command shows you what branch you're on, what files are in the working or staging directory, and any other important information.
+git branch: This shows the existing branches in your local repository. You can also use 
+    git branch [banch-name] to create a branch from your current location, or 
+    git branch --all to see all branches, both the local ones on your machine, and the remote tracking branches stored from the last git pull or git fetch from the remote.
+git checkout [branch-name]: Switches to the specified branch and updates the working directory.
+git add . / [file]: Snapshots the file in preparation for versioning, adding it to the staging area.
+git commit -m "descriptive message": Records file snapshots permanently in version history.
+git pull: Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. git pull is a combination of git fetch and git merge.
+git push: Uploads all local branch commits to the remote.
+git log: Browse and inspect the evolution of project files.
+git remote -v: Show the associated remote repositories and their stored name, like origin.
+
+
+
+
+round## I want to be able to do the following:
     1. create a local branch based on some other (remote or local) branch (via git branch or git checkout -b)
     2. Push the local branch to the remote repository (publish), but make it trackable so git pull and git push will work immediately.
     
@@ -12,6 +55,7 @@ git push -u origin <branch>
 git checkout master	# basis voot de merge
 git merge hotfix		# merge hotfix on master	
 	hierna een pull en push !
+
 
 ## Delete local
 git branch -d hotfix

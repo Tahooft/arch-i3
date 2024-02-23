@@ -1,2 +1,19 @@
-De desktop files. Zelfde bestandsopmaak als voor autostart dus kopie zorgt voor een nieuwe auto startup toevoeging
-/usr/share/applications/     ~/.config/autostart
+
+# De desktop files (1) - source
+/usr/share/applications/   - Zelfde bestandsopmaak als voor autostart dus kopie zorgt voor een nieuwe auto startup toevoeging
+ 
+# De desktop files (2) - Autostart .desktop bestanden
+~/.config/autostart
+
+
+# i3wm styling
+/home/th/.config/gtk-3.0/settings.ini
+
+# De Arcolinux scripts
+/usr/local/bin/
+
+# Reflector
+sudo vim /etc/xdg/reflector/reflector.conf 
+
+# Pacman
+sudo vim /etc/pacman.conf

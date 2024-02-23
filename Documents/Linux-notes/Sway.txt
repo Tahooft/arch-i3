@@ -1,0 +1,71 @@
+# The manual pages
+man -k sway
+man sway.2
+man sway.5
+
+https://github.com/swaywm/sway/wiki#libinput-config-options
+#Info about al open windows
+swaymsg -t get_tre
+
+#To get only the app_id's of all open windows use:
+swaymsg -t get_tree | grep "app_id"
+
+# Display id's en mouse etc
+swaymsg -t get_outputs
+
+A lot of modifications are available through xkb_options. They can be found in /usr/share/X11/xkb/symbols/{altwin,capslock,compose,ctrl} and the respective option name in /usr/share/X11/xkb/rules/base.
+
+Examples:
+
+    Make caps lock work as escape: xkb_options caps:escape
+    Swap escape and caps lock: xkb_options caps:swapescape
+    Make caps lock work as control: xkb_options ctrl:nocaps
+    Make caps lock work as additional control xkb_options caps:ctrl_modifier
+    Swap left alt and super, and set caps lock to escape: xkb_options altwin:swap_lalt_lwin,caps:escape
+    Make the menu key work as additional super: xkb_options altwin:menu_win
+
+
+# Fun to try
+links2
+
+#General needed
+pavucontrol
+python-pip
+gimp-plugin-gmic
+waifu2x-ncnn-vulkan
+brightnessctl
+
+clamav
+  sudo mkdir  /usr/local/share/clamav
+  sudo chown -R th:th /usr/local/share/clamav
+  sudo rmdir  /usr/local/share/clamav
+  sudo mkdir  /var/lib/clamav
+  sudo chown -R th:th /var/lib/clamav
+  curl https://secure.eicar.org/eicar.com.txt | clamscan -
+  systemctl start clamav-freshclam.service
+  freshclam
+  clamscan --recursive --infected --max-filesize=4000M --max-scansize=4000M -l clamlog.txt /home//th/Downloads/New Folder/
+
+#Sway
+sway alacritty waybar wofi xorg-xwayland xorg-xlsclients qt5-wayland 
+
+azote
+blueman (start Blueman with blueman-applet. A graphical settings panel can be launched with blueman-manager.)
+nwg-look
+nwg-displays
+brightnessctl
+glfw-wayland 
+Alacritty
+foot
+swaybg
+swaylock
+swayidle
+i3-focus
+grim (screenshot)
+mpv-full  (yay)
+
+mpd (?) python-mpd2 (?)
+nwg-look 
+
+python-spotdl (yay)
+swaync

@@ -1,0 +1,2 @@
+# On first run: 
+sudo lynis audit system 

@@ -1,0 +1,7 @@
+# Cheatsheet: https://vim.rtorr.com/
+
+#To display line numbers in Vim, go into the command mode by pressing Esc key and use:
+:set number!
+:set nu       		# short version
+:set nonumber
+:set nonu		# short version

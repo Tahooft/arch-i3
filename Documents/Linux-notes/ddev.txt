@@ -5,6 +5,40 @@ mkcert -install
 
 ## Setup web-envirionment
 # Replace my-site-name!
+
+##DRUPAL
+cd my-drupal10-site
+ddev config --project-type=drupal10 --docroot=web --create-docroot
+ddev start
+ddev composer create drupal/recommended-project
+ddev composer require drush/drush
+ddev drush site:install --account-name=admin --account-pass=admin -y
+ddev drush uli
+ddev launch
+
+## WORDPRESS
+mkdir my-wp-site
+cd my-wp-site/
+# Create a new DDEV project inside the newly-created folder
+# (Primary URL automatically set to `https://<folder>.ddev.site`)
+ddev config --project-type=wordpress
+ddev start
+# Download WordPress
+ddev wp core download
+# Launch in browser to finish installation
+ddev launch
+# OR use the following installation command
+# (we need to use single quotes to get the primary site URL from `.ddev/config.yaml` as variable)
+ddev wp core install --url='$DDEV_PRIMARY_URL' --title='New-WordPress' --admin_user=admin --admin_email=admin@example.com --prompt=admin_password
+# Launch WordPress admin dashboard in your browser
+ddev launch wp-admin/
+
+
+
+
+
+
+
 export SITE_NAME=my-site-name
 mkdir $SITE_NAME
 cd $SITE_NAME

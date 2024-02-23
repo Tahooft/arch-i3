@@ -1,0 +1,24 @@
+sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+sudo systemctl status mariadb
+sudo systemctl enable mariadb
+
+
+sudo systemctl status dbus
+sudo systemctl status systemd-homed.service
+sudo systemctl start systemd-homed.service
+sudo systemctl enable systemd-homed.service
+
+akonadictl start
+
+
+https://forum.manjaro.org/t/akonadi-trouble/19436 
+sudo aa-complain /usr/bin/akonadiserver fixed it for me.
+
+sudo aa-enforce /usr/bin/akonadiserver ,
+    Setting /usr/bin/akonadiserver to enforce mode.
+    Can't find , in the system path list. If the name of the application
+    is correct, please run 'which ,' as a user with correct PATH
+    environment set up in order to find the fully-qualified path and
+    use the full path as parameter.
+
+    

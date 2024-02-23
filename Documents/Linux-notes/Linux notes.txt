@@ -1,8 +1,10 @@
-In BASH
-Ctrl + A 	Go to the beginning of the selected line.
-Ctrl + E 	Go to the end of the selected line.
+Ctrl-Alt F1, F2, F7    start non-gui level and back to gui
+
+
+ctrl-a 		goto begin of line
+ctrl-e 		goto end of line
+ctrl-u		clear line 
 Ctrl + K 	Cut the part of the selected line after the cursor and copy it to the clipboard.
-Arrow Up 	Previously used command.
 Alt + B 	Move the cursor back one word.
 Alt + F 	Move the cursor forward one word.
 Ctrl + L 	Clean the current screen.
@@ -18,6 +20,11 @@ fg 			background proces to foreground again
 !120 after the command: HISTORY you can exec command by linenumber
 
 command | column -t		show output in columns
+
+tail -f 	shows real-time tail of file
+
+truncate -s 0  	empty a file
+
 
 # Reset desktop/GUI
 CTRL+ALT+F4 of CTRL+ALT+BACKSPACE
@@ -36,6 +43,9 @@ disown %1   als meerdere jobs lopen
 
 # Motherboard check
 sudo dmidecode |grep -B 2 Stat
+
+# Sensors info
+sensors
 
 # Directory sizes sorted on size
 du -ks * | sort -nr | more

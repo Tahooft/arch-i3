@@ -1,0 +1,11 @@
+Xfce Keyboard Shortcuts
+Super + P 	Open Xfce display settings.
+Alt + F2 	Open a command prompt.
+Ctrl + Alt + Arrow keys 	Move between virtual desktops.
+Alt + Tab 	Cycle between running applications.
+Alt + Shift + Tab 	Cycle between running applications in the opposite direction.
+Alt + F4 	Close the window in focus.
+Alt + F10 	Maximize the window in focus.
+Ctrl + Alt + D 	Minimize all windows to show desktop.
+Ctrl + Alt + Del 	Lock the current session.
+Ctrl + Esc 	Display context menu.

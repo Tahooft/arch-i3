@@ -1,0 +1,10 @@
+
+in /etc/pulse/deamon.conf
+
+; default-sample-channels = 2
+; default-channel-map = front-left,front-right
+
+to
+
+default-sample-channels = 2
+default-channel-map = front-right,front-left

@@ -1,0 +1,55 @@
+pacman -S clamav
+sudo mkdir  /var/lib/clamav
+sudo chown -R th:th /var/lib/clamav
+
+# Note:
+# You will need to run freshclam before starting the service for the first time or you will run into trouble/errors which will prevent ClamAV from starting correctly.
+
+freshclam
+systemctl start clamav-freshclam.service
+systemctl enable clamav-freshclam.service
+
+
+
+clamscan --recursive --infected --max-filesize=4000M --max-scansize=4000M -l clamlog.txt /home/
+
+clamscan --max-filesize=20000M --max-scansize=20000M -r --bell -v -i --move=/path/to/infected/files / --exclude-dir=/proc --exclude-dir=/sys --exclude-dir=/dev > results.txt
+
+# Test
+curl https://secure.eicar.org/eicar.com.txt | clamscan -
+
+# Get all the virus signatures
+ yay -S clamav-unofficial-sigs
+
+
+# Run the following command to display which signatures are being loaded by clamav
+clamscan --debug 2>&1 /dev/null | grep "loaded"
+
+
+
+
+
+└──| systemctl status clamav-freshclam.service
+× clamav-freshclam.service - ClamAV virus database updater
+     Loaded: loaded (/usr/lib/systemd/system/clamav-freshclam.service; enabled; preset: disabled)
+     Active: failed (Result: exit-code) since Sun 2023-12-10 11:02:58 CET; 6s ago
+   Duration: 8ms
+       Docs: man:freshclam(1)
+             man:freshclam.conf(5)
+             https://docs.clamav.net/
+    Process: 12077 ExecStart=/usr/bin/freshclam -d --foreground=true (code=exited, status=9)
+   Main PID: 12077 (code=exited, status=9)
+        CPU: 8ms
+
+Dec 10 11:02:58 pc systemd[1]: Started ClamAV virus database updater.
+Dec 10 11:02:58 pc freshclam[12077]: ERROR: lchown to user 'clamav' failed on
+Dec 10 11:02:58 pc freshclam[12077]: log file '/var/log/clamav/freshclam.log'.
+Dec 10 11:02:58 pc freshclam[12077]: Error was 'No such file or directory'
+Dec 10 11:02:58 pc freshclam[12077]: WARNING: lchown to user 'clamav' failed on log file '/var/log/clamav/freshclam.log'.  Error was 'No such file or directory'
+Dec 10 11:02:58 pc freshclam[12077]: ERROR: Failed to switch to clamav user.
+Dec 10 11:02:58 pc systemd[1]: clamav-freshclam.service: Main process exited, code=exited, status=9/n/a
+Dec 10 11:02:58 pc systemd[1]: clamav-freshclam.service: Failed with result 'exit-code'.
+┌──[11:03:04]─[1]─[pc:~]
+
+
+sudo chgrp -R th /var/lib/clamav/     -> geen resultaat

@@ -1,10 +1,3 @@
-# xrandr    monitor setting
-# xinput list     to find the devicenumber of the mouse
-# xinput list-props #devicenumber   to see the settings list
-# xev to get a keycode
-################# Includes
-# include ~/.config/i3/playground.conf
-
 ################# Define the $mod variable/key - set Super key
 set $mod Mod4
 
@@ -15,21 +8,22 @@ set $left h
 set $right l 
 
 ################# Defaults set
-set $startscreen ~/Pictures/Wallpapers/startscreen.png
+set $startscreen ~/Pictures/Wallpapers/startscreen.jpg
 set $firstMonitor HDMI-2
 set $secondMonitor eDP-1
 
+################# Includes
+# include ~/.config/i3/playground.conf
+
 ################# Autodect monitor configuration - https://github.com/phillipberndt/autorandr
 exec --no-startup-id autorandr --change
-# exec --no-startup-id xrandr --output eDP-1 --left-of HDMI-2 --auto
 
 ################# Popups  control                  
 popup_during_fullscreen smart
 
 ################# picom of i3wm - if you want transparency on non-focused windows
 exec_always --no-startup-id picom --config ~/.config/i3/picom.conf
-### Where is that toggle script?
-# bindsym control+mod1+o exec --no-startup-id ~/.config/i3/scripts/picom-toggle.sh
+bindsym control+mod1+o exec --no-startup-id ~/.config/i3/scripts/picom-toggle.sh
 
 ################# font                  
 font pango:FontAwesome 11, pango:RobotoMono Nerd Font 11
@@ -89,8 +83,8 @@ bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 # Assign application to start on a specific workspace - you can find the class with the program xprop
 assign [class="Firefox|firefox"]                                → $ws2
 assign [class="Code|code"]                                      → $ws4
-assign [class="brave-browser|Brave-browser"]                    → $ws5
 assign [class="libreoffice|libreoffice-writer"]                 → $ws5
+assign [class="Sublime Text (UNREGISTERED)"]                    → $ws5
 assign [class="freeciv-gtk3|Freeciv-gtk3|Freeciv"]              → $ws5
 assign [class="Qutebrowser|qutebrowser|chromium"]               → $ws6
 assign [class="qbittorrent|qBittorrent"]                        → $ws6
@@ -102,7 +96,6 @@ assign [class="vlc"]                                            → $ws10
 ################# My keybindings
 bindsym $mod+mod1+a exec --no-startup-id pavucontrol-qt;focus
 bindsym $mod+mod1+b exec --no-startup-id firefox;focus;border none
-bindsym $mod+mod1+Shift+b exec --no-startup-id brave;focus;border none
 bindsym $mod+mod1+c exec --no-startup-id code;focus
 bindsym $mod+mod1+e exec urxvt -e vim;focus
 bindsym $mod+mod1+f exec --no-startup-id catfish;focus;border none
@@ -164,10 +157,7 @@ bindsym $mod+slash exec --no-startup-id ~/.config/i3/scripts/i3-keylist.py -k
 for_window [title="i3 Key List"] floating enable border pixel 1
 
 ################# Mouse left-handed
-exec --no-startup-id xinput set-prop 11 "libinput Left Handed Enabled" 1
-bindsym $mod+mod1+l exec --no-startup-id xinput set-prop 11 "libinput Left Handed Enabled" 1
-bindsym $mod+mod1+Shift+l exec --no-startup-id xinput set-prop 11 "libinput Left Handed Enabled" 0
-
+exec --no-startup-id xinput set-prop 11 "libinput Left Handed Enabled" 0
 # Tryout
 focus_follows_mouse no
 
@@ -356,9 +346,6 @@ bindsym $mod+mod1+n exec --no-startup-id variety -n
 bindsym mod1+F10 exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym mod1+F11 exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym mod1+F12 exec --no-startup-id pactl set-sink-mute 0 toggle
-bindsym $mod+mod1+F10 exec --no-startup-id pactl set-sink-volume 0 25%
-bindsym $mod+mod1+F11 exec --no-startup-id pactl set-sink-volume 0 85%
-
 
 ################ playctl
 bindsym mod1+Shift+F10 exec --no-startup-id playerctl next
@@ -398,11 +385,11 @@ bar {
 	font pango:Noto Sans 11, FontAwesome 11
     tray_padding 4
 	position top
+    # position bottom
+
     # status_command i3status
-    status_command i3status -c ~/.config/i3/i3status.conf
-    # status_command ~/.config/i3/scripts/i3status-conky/i3status.sh
-    # testen met: i3-msg status_command i3status.sh ?
-    # status_command i3status.sh
+    # From: https://github.com/tonyho/i3wm-conky-config/tree/master
+    status_command /home/$USER/.config/i3/i3status-conky/i3status.sh
     colors {
         background #2F2F2F
         statusline #eeeeee
@@ -415,6 +402,7 @@ bar {
         }
     }
 
+set $coloratt #ff0000
 # class                         border          background      text            indicator       child_border
 client.focused                  #ffff33         #000000         #ffff33         $coloratt       #000000
 client.focused_inactive         #333333         #000000         #ffff33         $coloratt       #000000

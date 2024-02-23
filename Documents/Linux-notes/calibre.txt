@@ -1,0 +1,6 @@
+
+calibre,
+
+
+For sound: 
+pacman -S speech-dispatcher

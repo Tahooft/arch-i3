@@ -1,5 +1,7 @@
 Installatie Arch Linux
 
+No ook: Archinstall
+
 Een Arch opzet met 3 partities
 
 fdisk -l		list aanwezige devices (alleen /dev/sda 8GIB in virtbox
@@ -84,3 +86,14 @@ grub-mkconfig -o  /boot/grub/grub.cfg
 exit			verlaat chroot
 reboot
 
+494  pacman -Ss kdeconect
+  495  pacman -Ss kdeconnect
+  496  pacman -S kdeconnect
+  497  xdg-settings get Default web browser 
+  498  xdg-settings -get Default web browser 
+  499  xdg-settings  Default web browser 
+  500  xdg-settings set default-web-browse firefox.desktop
+  501  xdg-settings set default-web-browser firefox.desktop
+  502  xdg-settings  check Default web browser 
+  503  xdg-settings  get default-web-browser 
+  504  xdg-settings --list

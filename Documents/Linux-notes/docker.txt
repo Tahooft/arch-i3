@@ -52,7 +52,7 @@ Delete containers listed by ID:
 List all Docker images:
 
 # docker rm <CONTAINER ID>
-Delete images by ID:
+Delete containers by ID:
 
 # docker rmi <IMAGE ID>
 Delete all images, containers, volumes, and networks that are not associated with a container (dangling):

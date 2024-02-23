@@ -56,4 +56,6 @@ $HOME/.config/Code/User/settings.json
 live server of php server extentie
 
 # Add gthub repo's to vscode
-ctl-p >git   add repo
+ctl-p >git   add repo   # Kan ook door een account toe te voegen via de account icon in VSCode
+# Clone een repo via VSCode
+ctl-p >git clone

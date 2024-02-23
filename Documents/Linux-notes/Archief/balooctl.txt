@@ -1,0 +1,9 @@
+balooctl help
+
+i don’t know much about your issue but i had the same crashes with Baloo and did:
+
+$ balooctl disable
+$ balooctl purge
+$ balooctl enable
+
+which seems to have fixed it.
