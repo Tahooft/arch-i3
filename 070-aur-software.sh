@@ -34,8 +34,10 @@ brave-bin
 ddev-bin
 hardcode-fixer-git
 mintstick-git
+nwg-displays
 spotify_dl
 sublime-text-4
+swaync
 the_platinum_searcher-bin
 urxvt-resize-font-git
 ventoy-bin
