@@ -1,3 +1,6 @@
+Save to dotfiles" /etc/sddm.conf.d/*    
+
+
     Enable paccache.timer to clear the package cache weekly
     if using an SSD, enable fstrim.timer to discard unused blocks periodically
     Install and configure reflector to frequently update the mirrorlist automatically
