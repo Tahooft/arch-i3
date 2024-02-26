@@ -50,6 +50,7 @@ nwg-look
 glfw-wayland 
 foot
 grim
+wofi
 
 )
 

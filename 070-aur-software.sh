@@ -31,6 +31,7 @@ autotiling
 azote
 backintime
 brave-bin
+clipman # For sway
 ddev-bin
 hardcode-fixer-git
 mintstick-git
