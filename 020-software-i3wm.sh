@@ -39,6 +39,8 @@ arandr
 autotiling 
 dmenu
 feh
+gdm
+gdm-settings
 gmrun
 i3-wm
 i3blocks
@@ -60,7 +62,6 @@ python-i3ipc
 python-pywal
 rxvt-unicode
 rxvt-unicode-terminfo
-sddm
 tumbler
 urxvt-fullscreen
 urxvt-perls
