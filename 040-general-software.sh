@@ -36,6 +36,7 @@ bluez
 bluez-utils
 brightnessctl
 catfish
+d-spy
 dark-reader 		# FireFox dark 
 dconf-editor
 ffmpegthumbnailer
@@ -84,6 +85,7 @@ pragha
 python-pip
 qbittorrent
 qjournalctl
+qt5-tools
 qutebrowser
 ranger
 rsync
