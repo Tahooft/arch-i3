@@ -26,92 +26,208 @@ echo "Installation of the development packages"
 
 list=(
 
+#
+accountsservice
+acpilight # a backward-compatibile xbacklight replacement
+adapta-gtk-theme
+adobe-source-sans-fonts
+alacritty
+arandr
+arc-gtk-theme
 arch-audit
-bash-completion 
+audacity
+autorandr
+autotiling
+avidemux-qt #  	Graphical tool to edit video (filter/re-encode/split) - Qt GUI
+awesome-terminal-fonts
+baobab # Disk Usage Analyzer
+# base 	# using archinstall
+# base-devel # using archinstall
+bash-completion
 bash-language-server
 bat
-baobab
+blender
 blueberry
-bluez
+blueman
 bluez-utils
-brightnessctl
+# brightnessctl # now: acpilight
 catfish
-d-spy
-dark-reader 		# FireFox dark 
+chromium
+clamav
+# conky
+# conky-manager
+cronie
 dconf-editor
+# dmenu
+docker
+docker-compose
+# dzen2 # 	General purpose messaging, notification and menuing program for X11
+efibootmgr
+feh
 ffmpegthumbnailer
 file-roller
 firefox
 firefox-adblock-plus
 freeciv
+# gdm
+gimp
 gimp-plugin-gmic
+git
+glfw-wayland # ?
+# gmrun
+gnome-boxes
+gnome-disk-utility
+gnome-keyring
+gnome-logs
+gnome-mahjongg
+gnome-subtitles
+gnome-themes-extra
+gparted
+# gpodder
+grim #  	Screenshot utility for Wayland
+gsmartcontrol
+gst-plugin-pipewire
+# gst needed for gnome-subtitles
+gst-libav
+gst-plugin-openh264
+gst-plugin-wpe 
+gst-plugin-msdk
+gtk-theme-elementary
+gufw
 gvfs
 gvfs-afc
 gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
-gimp
-git
-gnome-disk-utility
-gnome-keyring
-gnome-logs
-gparted
-gpodder
-gsmartcontrol
 hblock
-hdparm
 hddtemp
-hplip
+hdparm
+# hplip
 htop
-hw-probe
+i3-wm
+i3lock
+i3status
 intel-ucode
+inxi
 jq
-libgsf     	 		# Needed to display raw thumbnails
-libreoffice-fresh 
+kdeconnect
+libgsf
+libpulse
+libreoffice-fresh
 libusb-compat
-lm_sensors
+# linux
+# linux-firmware ## ????
 logrotate
 lshw
+lxappearance
+lxrandr
+ly
+man-db
+man-pages
+mc
 meld
-numlockx
+mesa-utils
+mkcert
+most
+mpv
 neofetch
-nomacs
+neovim
+network-manager-applet
+networkmanager
+noto-fonts
+numlockx
+nwg-look # GTK3 settings editor adapted to work on wlroots-based compositors
+openshot
+oxygen-icons
+pasystray
 pavucontrol
+picom
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
 pkgstats
-polkit
+playerctl
 polkit-gnome
+# polybar
 pragha
+pychess
+python-gpgme
+python-i3ipc
 python-pip
 qbittorrent
-qjournalctl
 qt5-tools
+# qt5-wayland 
 qutebrowser
 ranger
+reflector
+rmlint-shredder
 rsync
+# samba
 scrot
 seahorse
 simple-scan
-sshfs
-stacer
+speech-dispatcher
+sshfs #  	FUSE client based on the SSH File Transfer Protocol
+sway
+swaybg
+swayidle
+swaylock
 telegram-desktop
+thermald
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
+# tk #  	A windowing toolkit for use with tcl
 tmux
-udisks2
+tree
+ttf-bitstream-vera
+ttf-dejavu
+ttf-droid
+ttf-font-awesome
+ttf-hack
+ttf-inconsolata
+ttf-liberation
+ttf-roboto
+ttf-ubuntu-font-family
+tumbler
+ufw
+ufw-extras
 usb_modeswitch
-usbmuxd
 usbutils
-vim
+variety
 vlc
+volumeicon
+w3m
 waifu2x-ncnn-vulkan
+waybar
 wireless-regdb
 wireless_tools
-wpa_supplicant
+wireplumber
+wofi
 xclip
-youtube-dl
+xcursor-themes
+xdg-desktop-portal-gtk
+xfce4-appfinder
+# xfce4-clipman-plugin
+# xfce4-notifyd
+# xfce4-power-manager
+# xfce4-session
+# xfce4-settings
+# xfce4-terminal
+# xfdesktop
+# xfwm4
+# xfwm4-themes
+xorg-xev
+xorg-xinput
+xorg-xlsclients
+xorg-xrdb
+xorg-xwayland
+yt-dlp
+zram-generator
+
 )
 
 count=0

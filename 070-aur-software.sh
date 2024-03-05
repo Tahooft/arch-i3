@@ -26,23 +26,35 @@ echo "Installation of the aur packages"
 
 list=(
 
-ant-dracula-kvantum-theme-git 
 autotiling
-azote
+# azote # Wallpaper & color manager for wlroots-based compositors and some X11 WMs
 backintime
+backintime-cli
 brave-bin
-clipman # For sway
+clamav-unofficial-sigs
+clipman
 ddev-bin
-hardcode-fixer-git
-mintstick-git
-nwg-displays
-spotify_dl
+# dropbox
+gdm-settings
+# hardcode-fixer-git
+i3-scratchpad-git
+# mintstick-git - use terminal or GNOME Disk Utility
+nomacs #  	A Qt image viewer
+# patool  #	portable command line archive file manager
+python-avalon_framework
+python-vulkan
+# realesrgan-ncnn-vulkan - image and video upscaler
+# spotify_dl
 sublime-text-4
-swaync
-the_platinum_searcher-bin
-urxvt-resize-font-git
-ventoy-bin
+subtitleedit
+tamsyn-font
+# the_platinum_searcher-bin
+# thunar-dropbox
+# upscaler -  	Upscale and enhance images
+# video2x -  	Machine learning video/GIF/image upscaling
 visual-studio-code-bin
+yay
+
 
 )
 

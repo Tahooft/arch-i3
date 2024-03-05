@@ -44,7 +44,7 @@ waybar
 wofi 
 xorg-xwayland 
 xorg-xlsclients 
-fqt5-wayland 
+qt5-wayland 
 blueman
 nwg-look
 glfw-wayland 
