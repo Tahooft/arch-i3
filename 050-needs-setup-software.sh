@@ -5,10 +5,14 @@
 # personal moet gedaan voordat dit script in ~/bin staat, misschien eerst testen of dat gebeurd is?
 set -e
 
+sudo pacman -S man-pages --noconfirm --needed
+sudo pacman -S man-db --noconfirm --needed
+sudo pacman -S most --noconfirm --needed
+sudo makewhatis /usr/share/man
 
-echo "################################################################"
-echo "####             Enable Timesyncd                            ###"
-echo "################################################################"
+# echo "################################################################"
+# echo "####             Enable Timesyncd                            ###"
+# echo "################################################################"
 # Setup now done during archinstall
 
 # sudo timedatectl set-local-rtc 1
@@ -16,15 +20,16 @@ echo "################################################################"
 # sudo systemctl start systemd-timesyncd.service
 # sudo systemctl enable systemd-timesyncd.service
 
-echo "################################################################"
-echo "####             Timesyncd enabled                           ###"
-echo "################################################################"
+# echo "################################################################"
+# echo "####             Timesyncd enabled                           ###"
+# echo "################################################################"
 
 
 echo "################################################################"
 echo "####             Enable THERMALD                             ###"
 echo "################################################################"
 sudo pacman -S thermald --noconfirm --needed
+
 sudo systemctl enable thermald
 sudo systemctl start thermald
 
@@ -32,10 +37,27 @@ echo "################################################################"
 echo "###################    THERMALD enabled   ######################"
 echo "################################################################"
 
+tput setaf 5;echo "################################################################"
+echo "Enabling services"
+echo "################################################################"
+echo;tput sgr0
+
+sudo systemctl enable avahi-daemon.service
+
+tput setaf 11;
+echo "################################################################"
+echo "Services enabled"
+echo "################################################################"
+echo;tput sgr0
+
+
+
+
 
 echo "################################################################"
 echo "####             Enable GUFW simple firewall                 ###"
 echo "################################################################"
+
 sudo pacman -S ufw gufw ufw-extras --noconfirm --needed
 sudo ufw enable
 systemctl enable ufw
@@ -82,7 +104,9 @@ echo "################################################################"
 echo "################################################################"
 echo "####             CRON                                        ###"
 echo "################################################################"
-sudo pacman -S cron --noconfirm --needed
+if pacman -Qi cron &> /dev/null; then
+    pacman -S cron --noconfirm --needed
+fi
 sudo  systemctl start cronie
 sudo systemctl enable cronie
 
@@ -109,19 +133,12 @@ echo "################################################################"
 echo "###################    BLUETOOTH SETUP      ####################"
 echo "################################################################"
 
-
 systemctl start bluetooth.service
 systemctl enable bluetooth.service
 
 echo "################################################################"
 echo "###################    BLUETOOTH SETUP DONE    #################"
 echo "################################################################"
-
-
-sudo pacman -S man-pages --noconfirm --needed
-sudo pacman -S man-db --noconfirm --needed
-sudo pacman -S most --noconfirm --needed
-sudo makewhatis /usr/share/man
 
 
 echo "################################################################"

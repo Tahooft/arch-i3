@@ -25,11 +25,9 @@ echo "Installation of bluetooth software"
 ###############################################################################
 
 list=(
-pulseaudio-bluetooth
-bluez
-bluez-libs
-bluez-utils
 blueberry
+blueman
+bluez-utils
 )
 
 count=0

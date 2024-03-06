@@ -37,6 +37,7 @@ arc-gtk-theme
 arch-audit
 audacity
 autorandr
+avahi
 avidemux-qt #  	Graphical tool to edit video (filter/re-encode/split) - Qt GUI
 awesome-terminal-fonts
 baobab # Disk Usage Analyzer
@@ -46,11 +47,12 @@ bash-completion
 bash-language-server
 bat
 blender
-blueberry
-blueman
-bluez-utils
+# blueberry # Taken care of in 040-needs-setup-software.sh
+# blueman
+# bluez-utils
 # brightnessctl # now: acpilight
 catfish
+# cbatticon
 chromium
 clamav
 # conky
@@ -58,8 +60,8 @@ clamav
 cronie
 dconf-editor
 # dmenu
-docker
-docker-compose
+# docker # Taken care of in 040-needs-setup-software.sh
+# docker-compose # Taken care of in 040-needs-setup-software.sh
 # dzen2 # 	General purpose messaging, notification and menuing program for X11
 efibootmgr
 feh
@@ -92,7 +94,7 @@ gst-plugin-openh264
 gst-plugin-wpe 
 gst-plugin-msdk
 gtk-theme-elementary
-gufw
+# gufw # Taken care of in 040-needs-setup-software.sh
 gvfs
 gvfs-afc
 gvfs-gphoto2
@@ -127,7 +129,7 @@ man-pages
 mc
 meld
 mesa-utils
-mkcert
+# mkcert # Taken care of in 040-needs-setup-software.sh
 most
 mpv
 neofetch
@@ -135,6 +137,7 @@ neovim
 network-manager-applet
 networkmanager
 noto-fonts
+nss-mdns
 numlockx
 # nwg-look # GTK3 settings editor, just copy de .config/gtk* files from the old system
 openshot
@@ -174,7 +177,7 @@ swaybg
 swayidle
 swaylock
 telegram-desktop
-thermald
+# thermald # Taken care of in 040-needs-setup-software.sh
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
@@ -244,5 +247,15 @@ export MANPAGER=less
 tput setaf 11;
 echo "################################################################"
 echo "Software has been installed"
+echo "################################################################"
+echo;tput sgr0
+
+echo;tput sgr0
+
+# xrdb ~/.Xresources
+
+tput setaf 11;
+echo "################################################################"
+echo " Updated ~/.Xresources --- if not set as commented
 echo "################################################################"
 echo;tput sgr0

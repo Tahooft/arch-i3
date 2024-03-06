@@ -6,7 +6,7 @@ echo "##############    Installing userdirs          #################"
 echo ""
 
 sudo pacman -S xdg-user-dirs --noconfirm --needed
-cd /home/th/
+cd ~
 xdg-user-dirs-update
 
 echo ""
