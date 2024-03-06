@@ -37,7 +37,6 @@ arc-gtk-theme
 arch-audit
 audacity
 autorandr
-autotiling
 avidemux-qt #  	Graphical tool to edit video (filter/re-encode/split) - Qt GUI
 awesome-terminal-fonts
 baobab # Disk Usage Analyzer
@@ -137,7 +136,7 @@ network-manager-applet
 networkmanager
 noto-fonts
 numlockx
-nwg-look # GTK3 settings editor adapted to work on wlroots-based compositors
+# nwg-look # GTK3 settings editor, just copy de .config/gtk* files from the old system
 openshot
 oxygen-icons
 pasystray
@@ -226,7 +225,7 @@ xorg-xlsclients
 xorg-xrdb
 xorg-xwayland
 yt-dlp
-zram-generator
+# zram-generator # archinstall
 
 )
 
