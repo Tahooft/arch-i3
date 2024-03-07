@@ -90,7 +90,6 @@ gsmartcontrol
 gst-plugin-pipewire
 # gst needed for gnome-subtitles
 gst-libav
-gst-plugin-openh264
 gst-plugin-wpe 
 gst-plugin-msdk
 gtk-theme-elementary

@@ -5,34 +5,6 @@ set -e
 echo "Installation of yay"
 ###############################################################################
 
-echo ""
-echo "###     Installing  from AUR                                 ###"
-echo ""
-
-BUILDS=~/.builds
-
-# Test of ~/.builds exists
-if [ ! -d $BUILDS ]; then
-  mkdir $BUILDS
-fi
-cd $BUILDS
-
-$filename = yay
-
-# Test of ~/.builds/filename exists
-if [ -d $BUILDS/$filename ]; then
-   rm -Rf $BUILDS/$filename
-fi
-
-git clone https://aur.archlinux.org/${filename}.git
-cd $filename
-makepkg -sicr
-
-echo ""
-echo "###     yay installed                                        ###"
-echo ""
-
-
 func_install() {
 	if yay -Qia $1 &> /dev/null; then
 		tput setaf 2
@@ -68,6 +40,7 @@ clipman
 ddev-bin
 # dropbox
 gdm-settings
+gst-plugin-openh264
 # hardcode-fixer-git
 i3-scratchpad-git
 # mintstick-git - use terminal or GNOME Disk Utility

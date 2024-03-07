@@ -4,7 +4,7 @@ set -e
 echo "################################################################"
 echo "####             Installing and Enabling Reflector           ###"
 echo "################################################################"
-if pacman -Qi reflector &> /dev/null; then
+if  pacman -Qi reflector &> /dev/null; then
     sudo pacman -S --noconfirm --needed reflector
 fi
 #NB!# edit the configuration file at /etc/xdg/reflector/reflector.conf and then enable the timer with:

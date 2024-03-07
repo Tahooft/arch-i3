@@ -8,7 +8,7 @@ set -e
 sudo pacman -S man-pages --noconfirm --needed
 sudo pacman -S man-db --noconfirm --needed
 sudo pacman -S most --noconfirm --needed
-sudo makewhatis /usr/share/man
+# sudo makewhatis /usr/share/man    ?????
 
 # echo "################################################################"
 # echo "####             Enable Timesyncd                            ###"
@@ -91,7 +91,7 @@ echo "################################################################"
 echo "####             CREATE KEYPAIR                              ###"
 echo "################################################################"
 # create keypair if missing - ook voor GIT nodig
-ssh-keygen -A
+sudo ssh-keygen -A
 
 echo "################################################################"
 echo "###################    KEYPAIR GENERATED    ####################"
