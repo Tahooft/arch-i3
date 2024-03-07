@@ -1,13 +1,15 @@
 #!/bin/bash
 set -e
 
-
 echo "################################################################"
-echo "####             Enable Reflector                            ###"
+echo "####             Installing and Enabling Reflector           ###"
 echo "################################################################"
-sudo pacman -S reflector
-
+if pacman -Qi reflector &> /dev/null; then
+    sudo pacman -S --noconfirm --needed reflector
+fi
 #NB!# edit the configuration file at /etc/xdg/reflector/reflector.conf and then enable the timer with:
+sudo cp Documents/reflector.conf  /etc/xdg/reflector/  
+sudo chown root:root /etc/xdg/reflector/reflector.conf
 
 systemctl enable reflector.timer
 systemctl start reflector.timer
@@ -18,17 +20,7 @@ echo "################################################################"
 echo "####             refelector enabled                          ###"
 echo "################################################################"
 
-
-
-
-
-
-echo "################################################################"
-echo "####             Installing reflector                        ###"
-echo "################################################################"
-
 # installing refector to test wich servers are fastest
-sudo pacman -S --noconfirm --needed reflector
 
 echo ""
 echo "####   finding fastest servers be patient for the world      ###"
@@ -47,9 +39,3 @@ cat /etc/pacman.d/mirrorlist | less
 
 sudo pacman -Syu
 
-
-echo ""
-echo "################################################################"
-echo "###############       Reflector enabled      ###################"
-echo "################################################################"
-echo ""

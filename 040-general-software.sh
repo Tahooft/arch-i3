@@ -163,7 +163,7 @@ qt5-tools
 # qt5-wayland 
 qutebrowser
 ranger
-reflector
+# reflector # 009-install-mirrors-optimized.sh
 rmlint-shredder
 rsync
 # samba
