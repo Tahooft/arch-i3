@@ -29,7 +29,7 @@ list=(
 ## KDE
 plasma-desktop
 egl-wayland
-plasma-wayland-session 
+plasma-wayland-protocols 
 kdeconnect
 kdenlive
 

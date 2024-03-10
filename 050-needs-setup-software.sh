@@ -57,8 +57,8 @@ echo "################################################################"
 
 sudo pacman -S ufw gufw ufw-extras --noconfirm --needed
 sudo ufw enable
-systemctl enable ufw
-systemctl start ufw
+sudo systemctl enable ufw
+sudo systemctl start ufw
 
 echo "################################################################"
 echo "###################    GUFW enabled       ######################"
@@ -68,7 +68,7 @@ echo "################################################################"
 echo "####             Enable systemd-boot-update                  ###"
 echo "################################################################"
 
-systemctl enable systemd-boot-update
+sudo systemctl enable systemd-boot-update
 
 echo "################################################################"
 echo "###################    systemd-boot-update enabled #############"
@@ -102,9 +102,9 @@ echo "################################################################"
 echo "####             CRON                                        ###"
 echo "################################################################"
 if pacman -Qi cron &> /dev/null; then
-    pacman -S cron --noconfirm --needed
+    sudo pacman -S cron --noconfirm --needed
 fi
-sudo  systemctl start cronie
+sudo systemctl start cronie
 sudo systemctl enable cronie
 
 echo "################################################################"
@@ -117,8 +117,8 @@ echo "####             SETUP DOCKER                                ###"
 echo "################################################################"
 sudo pacman -S docker docker-compose --noconfirm --needed
 sudo usermod -aG docker $USER
-systemctl enable docker
-systemctl start docker
+sudo systemctl enable docker
+sudo systemctl start docker
 
 echo "################################################################"
 echo "###################    DOCKER SETUP DONE    ####################"
@@ -130,8 +130,8 @@ echo "################################################################"
 echo "###################    BLUETOOTH SETUP      ####################"
 echo "################################################################"
 
-systemctl start bluetooth.service
-systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
 
 echo "################################################################"
 echo "###################    BLUETOOTH SETUP DONE    #################"
