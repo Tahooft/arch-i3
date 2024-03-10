@@ -26,6 +26,16 @@ echo "Installation of the development packages"
 
 list=(
 
+## KDE
+plasma-desktop
+egl-wayland
+plasma-wayland-session 
+kdeconnect
+kdenlive
+
+
+dmidecode # Desktop Management Interface table related utilities
+
 #
 accountsservice
 acpilight # a backward-compatibile xbacklight replacement
@@ -50,7 +60,7 @@ blender
 # blueberry # Taken care of in 040-needs-setup-software.sh
 # blueman
 # bluez-utils
-# brightnessctl # now: acpilight
+brightnessctl
 catfish
 # cbatticon
 chromium
@@ -74,7 +84,7 @@ freeciv
 gimp
 gimp-plugin-gmic
 git
-glfw-wayland # ?
+glfw-wayland
 # gmrun
 gnome-boxes
 gnome-disk-utility
@@ -87,11 +97,13 @@ gparted
 # gpodder
 grim #  	Screenshot utility for Wayland
 gsmartcontrol
-gst-plugin-pipewire
+
 # gst needed for gnome-subtitles
 gst-libav
 gst-plugin-wpe 
 gst-plugin-msdk
+gst-plugin-pipewire
+
 gtk-theme-elementary
 # gufw # Taken care of in 040-needs-setup-software.sh
 gvfs
@@ -111,7 +123,6 @@ i3status
 intel-ucode
 inxi
 jq
-kdeconnect
 libgsf
 libpulse
 libreoffice-fresh
@@ -159,7 +170,7 @@ python-i3ipc
 python-pip
 qbittorrent
 qt5-tools
-# qt5-wayland 
+qt5-wayland 
 qutebrowser
 ranger
 # reflector # 009-install-mirrors-optimized.sh
@@ -169,6 +180,7 @@ rsync
 scrot
 seahorse
 simple-scan
+slurp 	# Select a region in a Wayland compositor
 speech-dispatcher
 sshfs #  	FUSE client based on the SSH File Transfer Protocol
 sway

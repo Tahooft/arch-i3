@@ -46,6 +46,7 @@ i3-scratchpad-git
 # mintstick-git - use terminal or GNOME Disk Utility
 nomacs #  	A Qt image viewer
 # patool  #	portable command line archive file manager
+phoronix-test-suite
 python-avalon_framework
 python-vulkan
 # realesrgan-ncnn-vulkan - image and video upscaler
@@ -58,7 +59,8 @@ tamsyn-font
 # upscaler -  	Upscale and enhance images
 # video2x -  	Machine learning video/GIF/image upscaling
 visual-studio-code-bin
-yay
+vosk-api
+# yay
 
 
 )
