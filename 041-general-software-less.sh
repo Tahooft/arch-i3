@@ -56,7 +56,7 @@ baobab # Disk Usage Analyzer
 bash-completion
 bash-language-server
 bat
-blender
+# blender
 # blueberry # Taken care of in 040-needs-setup-software.sh
 # blueman
 # bluez-utils
@@ -79,19 +79,19 @@ ffmpegthumbnailer
 file-roller
 firefox
 firefox-adblock-plus
-freeciv
+# freeciv
 # gdm
 gimp
 gimp-plugin-gmic
 git
 glfw-wayland
 # gmrun
-gnome-boxes
+# gnome-boxes
 gnome-disk-utility
 gnome-keyring
 gnome-logs
 gnome-mahjongg
-gnome-subtitles
+# gnome-subtitles
 gnome-themes-extra
 gparted
 # gpodder
@@ -99,10 +99,10 @@ grim #  	Screenshot utility for Wayland
 gsmartcontrol
 
 # gst needed for gnome-subtitles
-gst-libav
-gst-plugin-wpe 
-gst-plugin-msdk
-gst-plugin-pipewire
+# gst-libav
+# gst-plugin-wpe 
+# gst-plugin-msdk
+# gst-plugin-pipewire
 
 gtk-theme-elementary
 # gufw # Taken care of in 040-needs-setup-software.sh
@@ -150,7 +150,7 @@ noto-fonts
 nss-mdns
 numlockx
 # nwg-look # GTK3 settings editor, just copy de .config/gtk* files from the old system
-openshot
+# openshot
 oxygen-icons
 pasystray
 pavucontrol
@@ -164,7 +164,7 @@ playerctl
 polkit-gnome
 # polybar
 pragha
-pychess
+# pychess
 python-gpgme
 python-i3ipc
 python-pip
@@ -181,7 +181,7 @@ scrot
 seahorse
 simple-scan
 slurp 	# Select a region in a Wayland compositor
-speech-dispatcher
+# speech-dispatcher
 sshfs #  	FUSE client based on the SSH File Transfer Protocol
 sway
 ttf-nerd-fonts-symbols # Nice for neovim
